@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppNews</string>
+    <string name="description">Descição</string>
+    <string name="title">Título</string>
+    <string name="source">Fonte</string>
+    <string name="published_at">Publicado em:</string>
+    <string name="favorite">Favoritos</string>
+    <string name="search_menu">Pesquisar</string>
+    <string name="search_query_hint">Pesquisar notícias pelo mundo</string>
+    <string name="article_saved_successful">Artigo salvo com sucesso!</string>
+    <string name="article_delete_sucessful">Artigo deletado com sucesso</string>
+    <string name="undo">Desfazer</string>
+</resources>
