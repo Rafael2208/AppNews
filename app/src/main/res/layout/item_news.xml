@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivArticleImage"
@@ -25,7 +25,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:fontFamily="@font/open_sans"
-        android:text="@string/app_name"
+        android:text="@string/title"
         android:textAllCaps="true"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/open_sans"
         android:maxLines="7"
-        android:text="@string/app_name"
+        android:text="@string/description"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/ivArticleImage"
         app:layout_constraintEnd_toEndOf="@id/tvTitle"
@@ -50,8 +50,25 @@
         android:id="@+id/tvSource"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="@string/source"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans"
         app:layout_constraintTop_toBottomOf="@id/ivArticleImage"
         app:layout_constraintStart_toStartOf="@id/ivArticleImage"/>
+    
+    <TextView
+        android:id="@+id/tvPublishedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/published_at"
+        app:layout_constraintStart_toStartOf="@id/tvSource"
+        app:layout_constraintTop_toBottomOf="@id/tvSource"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="end" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
